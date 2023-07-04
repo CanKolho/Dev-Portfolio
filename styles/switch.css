@@ -1,0 +1,56 @@
+.switch {
+  width: 6rem;
+  margin: .7rem auto;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), 
+  -0.2rem -0.2rem -0.5rem var(--white);
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  border-radius: 1.6rem;
+}
+
+.switch label::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	background: #005AFF;
+	opacity: 0;
+	transition: all 0.4s ease;
+}
+
+.switch input:checked ~ label::before {
+	opacity: 1;
+}
+
+.switch label::after {
+	content: '';
+	position: absolute;
+	left: 0.4rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	border-radius: 50%;
+	background: var(--greyDark);
+	transition: all 0.4s ease;
+}
+
+.switch input:checked ~ label::after {
+	left: 57%;
+	background: var(--greyLight-1);
+}
+
+
+
+

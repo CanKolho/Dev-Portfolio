@@ -1,0 +1,31 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: #0d1117;
+  --bg-navBar: rgba(0, 0, 0, 0.5);
+
+  /*switch*/
+  /*--primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;*/
+  --white: white;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d0e7;
+  --greyDark: #9baacf;
+}
+  
+
+body {
+  font-family:roboto, Arial, Helvetica, sans-serif;
+  background-color: var(--bg-main);
+}

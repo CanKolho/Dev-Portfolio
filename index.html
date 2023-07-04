@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/general.css">
+		<link rel="stylesheet" href="styles/switch.css">
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <h1 class="logo">Portfolio<span class="dot">.</span></h1>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li>
+              <a href="" class="active">Home</a>
+            </li>
+            <li>
+              <a href="">About me</a>
+            </li>
+            <li>
+              <a href="">Skills</a>
+            </li>
+            <li>
+              <a href="">Projects</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+                <div class="switch">
+									<input id="toggle__switch" type="checkbox">
+									<label for="toggle__switch"></label>
+								</div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </main>
+    <script src="js/hamburger.js"></script>
+    <script src="js/navbarScroll.js"></script>
+  </body>
+</html>
