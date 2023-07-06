@@ -19,7 +19,7 @@ header {
 }
 
 .dot {
-  background: #005AFF;
+  background: var(--navBar-links);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -45,28 +45,18 @@ header {
     
 .nav-bar ul li a:hover {
   color: white;
-  background: #005AFF;
+  background: var(--navBar-links);
 }
   
 .nav-bar ul li a:active,
 .nav-bar ul li a.active:active {
-  background: #005AFF;
+  background: var(--navBar-links);
 }
   
 .nav-bar ul li a.active {
   color: white;
-  background-color: #005AFF;
+  background-color: var(--navBar-links);
 }
-  
-	/*
-.nav-bar ul li a {
-	display: block;
-	color: rgb(213, 213, 213);
-	font-size: 2rem;
-	padding: 1rem 2.5rem;
-	transition: 0.2s;
-	margin: 0 .5rem;
-}*/
     
 @media only screen and (max-width: 1320px) {
 	header {
@@ -94,12 +84,12 @@ header {
 	}
 
 	.hamburger:hover .line {
-		background-color: #005AFF;
+		background-color: var(--navBar-links);
 		transition: background-color 0.15s;
 	}
 			
 	.hamburger:active .line {
-		background: #367bfa;
+		background: #0059ff;
 	}
 	
 	.nav-bar {

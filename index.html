@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/general.css">
 		<link rel="stylesheet" href="styles/switch.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
   </head>
   <body>
     <main>
@@ -26,19 +28,19 @@
         <nav class="nav-bar">
           <ul>
             <li>
-              <a href="" class="active">Home</a>
+              <a href="#home" class="active">Home</a>
             </li>
             <li>
-              <a href="">About me</a>
+              <a href="#about">About me</a>
             </li>
             <li>
-              <a href="">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <li>
                 <div class="switch">
@@ -50,9 +52,23 @@
           </ul>
         </nav>
       </header>
+      <section class="home" id="home">
+        <div class="home-content">
+          <h3>Hello, It's Me</h3>
+          <h1>Can Kolho</h1>
+          <h3>And I'm a <span class="multiple-text"></span></h3>
+          <p>I am a second-year  CS student at Aalto University with a passion for modern technological solutions. I have strong social skills, adaptability, practicality and excellent problem-solving skills.</p>
+          <a href="#contact" class="btn" id="btn">Let's Contact</a>
+        </div>
+        <div class="home-img">
+          <img src="images/me2.jpg" alt="">
+        </div>
+      </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/navbarScroll.js"></script>
 		<script src="js/switch.js"></script>
+    <script src="js/typed.js"></script>
   </body>
 </html>
