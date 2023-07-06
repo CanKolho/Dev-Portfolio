@@ -9,6 +9,7 @@ header {
     top: 0;
     z-index: 100;
     background-color: var(--bg-navBar);
+	-webkit-backdrop-filter: blur(.4rem);
     backdrop-filter: blur(.4rem); 
     transition: top 0.4s ease;
   }
@@ -102,7 +103,8 @@ header {
 		transition: 0.3s;
 		overflow: hidden;
 		background-color: var(--bg-navBar);
-		backdrop-filter: blur(.4rem); 
+		-webkit-backdrop-filter: blur(.4rem);
+    backdrop-filter: blur(.4rem); 
 	}
 	
 	.nav-bar.active {
@@ -110,12 +112,12 @@ header {
 	}
 	
 	.nav-bar ul {
-			display: block;
-			width: fit-content;
-			margin: 8rem auto 0 auto;
-			text-align: center;
-			transition: 0.5s;
-			opacity: 0;
+		display: block;
+		width: fit-content;
+		margin: 8rem auto 0 auto;
+		text-align: center;
+		transition: 0.5s;
+		opacity: 0;
 	}
 	
 	.nav-bar.active ul{
