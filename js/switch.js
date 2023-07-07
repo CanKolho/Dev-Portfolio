@@ -2,8 +2,9 @@ const switchInput = document.getElementById('toggle__switch');
 
 const home = document.getElementById('home');
 const homeBtn = document.getElementById('btn');
-
 const about = document.getElementById('about');
+const skills = document.getElementById('skills');
+const skillPercentages = Array.from(document.getElementsByClassName('percentage'));
 
 function lightmode() {
   home.style.backgroundColor = 'var(--lightmode-bg2)';
@@ -11,7 +12,14 @@ function lightmode() {
   homeBtn.style.color = 'var(--text-black)';
 
   about.style.backgroundColor = 'var(--lightmode-bg1)';
-  about.style.color =  'var(--text-black)';
+  about.style.color = 'var(--text-black)';
+
+  skills.style.backgroundColor = 'var(--lightmode-bg2)';
+  skills.style.color = 'var(--text-black)';
+  skillPercentages.forEach((percentage) => {
+    percentage.style.color = 'var(--text-black)';
+  });
+
 }
 
 function darkmode() {
@@ -20,7 +28,13 @@ function darkmode() {
   homeBtn.style.color = 'var(--text-white)';
 
   about.style.backgroundColor = 'var(--darkmode-bg2)';
-  about.style.color =  'var(--text-white)';
+  about.style.color = 'var(--text-white)';
+
+  skills.style.backgroundColor = 'var(--darkmode-bg1)';
+  skills.style.color =  'var(--text-white)';
+  skillPercentages.forEach((percentage) => {
+    percentage.style.color = 'var(--text-white)';
+  });
 };
 
 //darkmode is 'default' when entering page. 

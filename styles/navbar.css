@@ -20,7 +20,7 @@ header {
 }
 
 .dot {
-  background: var(--navBar-links);
+  background: var(--blue);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -46,17 +46,17 @@ header {
     
 .nav-bar ul li a:hover {
   color: white;
-  background: var(--navBar-links);
+  background: var(--blue);
 }
   
 .nav-bar ul li a:active,
 .nav-bar ul li a.active:active {
-  background: var(--navBar-links);
+  background: var(--blue);
 }
   
 .nav-bar ul li a.active {
   color: white;
-  background-color: var(--navBar-links);
+  background-color: var(--blue);
 }
     
 @media only screen and (max-width: 1320px) {
@@ -85,7 +85,7 @@ header {
 	}
 
 	.hamburger:hover .line {
-		background-color: var(--navBar-links);
+		background-color: var(--blue);
 		transition: background-color 0.15s;
 	}
 			

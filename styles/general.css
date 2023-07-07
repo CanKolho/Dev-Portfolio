@@ -15,16 +15,13 @@ html {
   background-color: rgba(222, 222, 222, 0.6);
 }
 
-
 :root {
   --darkmode-bg1: #0d1117;
-  /*--darkmode-bg2: #151c25;*/
   --darkmode-bg2: #141a24;
   --lightmode-bg1: white;
   --lightmode-bg2: rgb(247, 241, 241);
   --bg-navBar: rgba(0, 0, 0, 0.5);
-  --navBar-links: #3179ff;
-  /*--navBar-links: #0059ff;*/
+  --blue: #3179ff;
   --text-white: #ffffff;
   --text-black: #000000; 
 

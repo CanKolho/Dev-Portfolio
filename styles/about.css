@@ -3,6 +3,7 @@
 	align-items: center;
 	justify-content: center;
   gap: 2rem;
+  padding: 8rem 9% 2rem;
 	background: var(--darkmode-bg2);
   color: var(--text-white);
 }

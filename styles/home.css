@@ -16,7 +16,7 @@
 }
 
 span {
-	color: var(--navBar-links);
+	color: var(--blue);
 }
 
 
@@ -41,8 +41,8 @@ span {
 	display: inline-block;
 	padding: 1rem 2.8rem;
 	border-radius: 4rem;
-	background-color: var(--navBar-links);
-	box-shadow: 0 0 1rem var(--navBar-links);
+	background-color: var(--blue);
+	box-shadow: 0 0 1rem var(--blue);
 	font-size: 1.6rem;
 	color: var(--text-white);
 	letter-spacing: 0.1rem;
