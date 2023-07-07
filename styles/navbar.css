@@ -9,7 +9,7 @@ header {
     top: 0;
     z-index: 100;
     background-color: var(--bg-navBar);
-	-webkit-backdrop-filter: blur(.4rem);
+		-webkit-backdrop-filter: blur(.4rem);
     backdrop-filter: blur(.4rem); 
     transition: top 0.4s ease;
   }
@@ -102,6 +102,7 @@ header {
 		width: 100vw;
 		transition: 0.3s;
 		overflow: hidden;
+		z-index: 100;
 		background-color: var(--bg-navBar);
 		-webkit-backdrop-filter: blur(.4rem);
     backdrop-filter: blur(.4rem); 

@@ -18,6 +18,8 @@ html {
 
 :root {
   --darkmode-bg1: #0d1117;
+  /*--darkmode-bg2: #151c25;*/
+  --darkmode-bg2: #141a24;
   --lightmode-bg1: white;
   --lightmode-bg2: rgb(247, 241, 241);
   --bg-navBar: rgba(0, 0, 0, 0.5);
@@ -36,4 +38,10 @@ html {
 body {
   font-family:roboto, Arial, Helvetica, sans-serif;
   transition: background-color 0.4s ease; /* Add the transition property */
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+	transition: background-color 0.4s ease;
 }
