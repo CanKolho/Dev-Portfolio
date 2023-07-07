@@ -23,7 +23,7 @@ html {
   --bg-navBar: rgba(0, 0, 0, 0.5);
   --blue: #3179ff;
   --text-white: #ffffff;
-  --text-black: #000000; 
+  --text-black: #000000;
 
   /*switch*/
   --white: white;
@@ -35,6 +35,7 @@ html {
 body {
   font-family:roboto, Arial, Helvetica, sans-serif;
   transition: background-color 0.4s ease; /* Add the transition property */
+  
 }
 
 section {

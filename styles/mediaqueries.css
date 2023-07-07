@@ -21,6 +21,14 @@
 		width: 95vw;
 		margin-top: 4rem;
 	}
+
+	.project-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.projects {
+		padding-bottom: 7rem;
+	}
 }
 
 @media (max-width: 768px) {
@@ -44,6 +52,19 @@
 	.about-img img {
 		width: 55vw;
 	}
+
+	.project h2 {
+		margin-bottom: 3rem;
+	}
+
+}
+
+@media (max-width: 671px) {
+	.project-container {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 5rem;
+	}
+
 }
 
 @media (max-width: 450px) {

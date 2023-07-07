@@ -5,6 +5,8 @@ const homeBtn = document.getElementById('btn');
 const about = document.getElementById('about');
 const skills = document.getElementById('skills');
 const skillPercentages = Array.from(document.getElementsByClassName('percentage'));
+const projects = document.getElementById('projects');
+const projectHeader = document.getElementById('project-header');
 
 function lightmode() {
   home.style.backgroundColor = 'var(--lightmode-bg2)';
@@ -20,6 +22,8 @@ function lightmode() {
     percentage.style.color = 'var(--text-black)';
   });
 
+  projects.style.backgroundColor = 'var(--lightmode-bg1)';
+  projectHeader.style.color = 'var(--text-black)';
 }
 
 function darkmode() {
@@ -35,6 +39,9 @@ function darkmode() {
   skillPercentages.forEach((percentage) => {
     percentage.style.color = 'var(--text-white)';
   });
+
+  projects.style.backgroundColor = 'var(--darkmode-bg2)';
+  projectHeader.style.color = 'var(--text-white)';
 };
 
 //darkmode is 'default' when entering page. 
