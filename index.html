@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/mediaqueries.css">
   </head>
@@ -179,6 +180,39 @@
           </div>
         </div>
       </section>
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me.</span></h2>
+        <form>
+          <div class="input-box">
+            <div class="input-field">
+              <input oninput="handleName(event)"
+               id="name" 
+               type="text" 
+               maxlength="50"
+              required>
+              <label class="input__label" htmlFor="input">Full Name</label>
+            </div>
+            <div class="input-field">
+              <input oninput="handleEmail(event)"
+              id="email"
+              type="text"
+              maxlength="50"
+              required>
+              <label class="input__label" htmlFor="input">Email Address</label>
+            </div>
+            <div class="textarea-field">
+              <input oninput="handleMsg(event)"
+              id="msg"
+              class="msg"
+              required>
+              <label class="input__label" htmlFor="textarea">Your Message</label>
+            </div>
+            <div class="btn-box">
+              <button id="sendBtn" type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </section>
       <div class="footer">
         <div class="bubbles">
           <div class="bubble" style="--size:3.2412319835186203rem; --distance:6.881818062029767rem; --position:3.9089003580167514%; --time:2.229147241919517s; --delay:-2.916639444167297s;"></div>
@@ -333,5 +367,6 @@
     <script src="js/navbarScroll.js"></script>
 		<script src="js/switch.js"></script>
     <script src="js/typed.js"></script>
+    <script src="js/input.js"></script>
   </body>
 </html>

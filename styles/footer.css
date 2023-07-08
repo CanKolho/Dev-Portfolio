@@ -5,9 +5,10 @@ body .footer {
   position: relative;
   grid-area: footer;
   min-height: 30vh;
-  margin-top: 10rem;
+
 }
-body .footer .bubbles {
+
+.bubbles {
   position: absolute;
   top: 0;
   left: 0;
@@ -16,7 +17,8 @@ body .footer .bubbles {
   background: var(--blue);
   filter: url("#blob");
 }
-body .footer .bubbles .bubble {
+
+.bubble {
   position: absolute;
   left: var(--position, 50%);
   background: var(--blue);
@@ -26,7 +28,7 @@ body .footer .bubbles .bubble {
   transform: translate(-50%, 100%);
 }
 
-body .footer .content {
+.content {
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -37,16 +39,13 @@ body .footer .content {
   background: var(--blue);
 }
 
-body .footer .content a, body .footer .content p {
+.content a {
   color: #F5F7FA;
   text-decoration: none;
-}
-
-body .footer .content a {
   margin: 0;
   font-size: 1.8rem;
 }
-
+  
 body .footer .content a:hover {
   text-decoration: underline;
 }

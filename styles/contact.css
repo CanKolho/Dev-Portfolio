@@ -1,0 +1,95 @@
+/*Not ready
+TODO:
+textfield bigger and label position correct
+button styling
+working form*/
+.contact {
+  background: var(--darkmode-bg1);
+  color: var(--text-white);
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 3rem auto 0;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
+
+.input-field,
+.textarea-field{
+  position: relative;
+}
+
+.input-field label,
+.textarea-field label {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  pointer-events: none;
+  color: #888888;
+  transition: 0.3s,
+  background-color .4s;
+  font-size: 1.6rem;
+}
+
+.input-field > label,
+.textarea-field > label {
+  left: 1.2rem;
+  translate: 0 -50%;
+  padding: .4rem .8rem;
+}
+
+.input-field > input,
+.textarea-field input {
+  height: 5rem;
+  width: 100%;
+  padding-left: 1.6rem;
+  border: .2rem solid #888888;
+  border-radius: .8rem;
+  outline: none;
+  background: transparent;
+  color: #f9f9f9;
+  font-size: 1.6rem;
+
+}
+
+.input-field > :is(input:focus, .has-value),
+.textarea-field > :is(input:focus, .has-value) {
+  border-color: #4c6cfc;
+}
+
+
+.input-field > :is(input:focus, .has-value) ~ label {
+  background: var(--darkmode-bg1);
+  color: rgba(255, 255, 255, 0.75);
+  translate: 0 -4rem;
+}
+
+.textarea-field > :is(input:focus, .has-value) ~ label {
+  background: var(--darkmode-bg1);
+  color: rgba(255, 255, 255, 0.75);
+  translate: 0 -4rem;
+}
+
+.btn-box button {
+	padding: 1rem 2.8rem;
+	border-radius: 4rem;
+  border: none;
+	background-color: var(--blue);
+	box-shadow: 0 0 1rem var(--blue);
+	font-size: 1.6rem;
+	color: var(--text-white);
+	letter-spacing: 0.1rem;
+	/*font-weight: 600;*/
+	transition: .5s ease;
+}
+
+.btn-box button:hover {
+box-shadow: none;
+}

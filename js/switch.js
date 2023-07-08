@@ -8,6 +8,10 @@ const skills = document.getElementById('skills');
 const skillPercentages = Array.from(document.getElementsByClassName('percentage'));
 const projects = document.getElementById('projects');
 const projectHeader = document.getElementById('project-header');
+const contact = document.getElementById('contact');
+const inputs = Array.from(document.getElementsByTagName('input'));
+const labels = Array.from(document.getElementsByClassName('input__label'));
+const contactBtn = document.getElementById('sendBtn')
 
 function lightmode() {
 
@@ -28,11 +32,23 @@ function lightmode() {
 
   projects.style.backgroundColor = 'var(--lightmode-bg1)';
   projectHeader.style.color = 'var(--text-black)';
+
+  contact.style.backgroundColor = 'var(--lightmode-bg2)';
+  contact.style.color = 'var(--text-black)';
+  inputs.forEach((input) => {
+    input.style.color = 'var(--text-black)';
+  });
+  
+  labels.forEach((label) => {
+    label.style.color = 'var(--text-black)';
+    label.style.backgroundColor = 'var(--lightmode-bg2)';
+  });
+  contactBtn.style.color = 'var(--text-black)';
 }
 
 function darkmode() {
 
-  body.style.backgroundColor = 'var(--darkmode-bg2)';
+  body.style.backgroundColor = 'var(--darkmode-bg1)';
 
   home.style.backgroundColor = 'var(--darkmode-bg1)';
   home.style.color = 'var(--text-white)';
@@ -49,6 +65,19 @@ function darkmode() {
 
   projects.style.backgroundColor = 'var(--darkmode-bg2)';
   projectHeader.style.color = 'var(--text-white)';
+
+  contact.style.backgroundColor = 'var(--darkmode-bg1)';
+  contact.style.color =  'var(--text-white)';
+  inputs.forEach((input) => {
+    input.style.color = 'var(--text-white)';
+  });
+  
+  labels.forEach((label) => {
+    label.style.color = 'var(--text-white)';
+    label.style.backgroundColor = 'var(--darkmode-bg1)';
+  });
+  
+  contactBtn.style.color = 'var(--text-white)';
 };
 
 //darkmode is 'default' when entering page. 
