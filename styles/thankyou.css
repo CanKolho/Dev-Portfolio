@@ -1,0 +1,57 @@
+  .thank-you-page {
+  background-color: var(--darkmode-bg1);
+  color: var(--text-white);
+  text-align: center;
+  padding: 10rem 0;
+  height: 100vh;
+}
+  
+.thank-you-header {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+  
+.thank-you-message {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+  
+.thank-you-description {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+  
+.return-link {
+  font-size: 1.6rem;
+  color: var(--text-white);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: var(--blue);
+  border-radius: .5rem;
+  transition: background-color 0.3s;
+}
+  
+.return-link:hover {
+  background-color: #1ac8f3;
+}
+  
+@media only screen and (max-width: 500px) {
+  .thank-you-header {
+    font-size: 2.4rem;
+  }
+    
+  .thank-you-message {
+    font-size: 2rem;
+  }
+    
+  .thank-you-description {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+    
+  .return-link {
+    font-size: 1.4rem;
+    padding: .8rem 1.6rem;
+  }
+}
+  

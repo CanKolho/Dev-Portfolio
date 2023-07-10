@@ -182,11 +182,15 @@
       </section>
       <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me.</span></h2>
-        <form>
+        <form
+        action="https://formsubmit.co/4da29a989dd9241095e5b6fd4815da9a" method="post">
+        <input type="hidden" name="_subject" value="New message from My Portfolio!">
+        <input type="hidden" name="_next" value="https://cankolho.github.io/CanKolho-Portfolio/thankyou.html">
           <div class="input-box">
             <div class="input-field">
               <input oninput="handleName(event)"
-               id="name" 
+               id="name"
+               name="name" 
                type="text" 
                maxlength="50"
               required>
@@ -195,6 +199,7 @@
             <div class="input-field">
               <input oninput="handleEmail(event)"
               id="email"
+              name="email"
               type="text"
               maxlength="50"
               required>
@@ -203,7 +208,9 @@
             <div class="textarea-field">
               <input oninput="handleMsg(event)"
               id="msg"
+              name="message"
               class="msg"
+              maxlength="97"
               required>
               <label class="input__label" htmlFor="textarea">Your Message</label>
             </div>
@@ -345,6 +352,7 @@
           <div class="bubble" style="--size:4.390947862087191rem; --distance:6.190201563681275rem; --position:69.3528823997794%; --time:2.6129376732959346s; --delay:-3.147687779367443s;"></div>
         </div>
         <div class="content">
+            <h3>Links</h3>
             <a href="#home">Home</a>
             <a href="#about">About me</a>
             <a href="#skills">Skills</a>

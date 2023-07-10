@@ -3,15 +3,23 @@ const switchInput = document.getElementById('toggle__switch');
 const body = document.body;
 const home = document.getElementById('home');
 const homeBtn = document.getElementById('btn');
+
 const about = document.getElementById('about');
+
 const skills = document.getElementById('skills');
 const skillPercentages = Array.from(document.getElementsByClassName('percentage'));
+
 const projects = document.getElementById('projects');
 const projectHeader = document.getElementById('project-header');
+
 const contact = document.getElementById('contact');
 const inputs = Array.from(document.getElementsByTagName('input'));
 const labels = Array.from(document.getElementsByClassName('input__label'));
-const contactBtn = document.getElementById('sendBtn')
+const contactBtn = document.getElementById('sendBtn');
+
+const thankYou = document.getElementById('thank-you-page');
+const thankYouLink = document.getElementById('return-link');
+
 
 function lightmode() {
 
@@ -44,6 +52,10 @@ function lightmode() {
     label.style.backgroundColor = 'var(--lightmode-bg2)';
   });
   contactBtn.style.color = 'var(--text-black)';
+
+  thankYou.style.backgroundColor = 'var(--lightmode-bg1)';
+  thankYou.style.color = 'var(--text-black)';
+  thankYouLink.style.color = 'var(--text-black)';
 }
 
 function darkmode() {
@@ -76,8 +88,11 @@ function darkmode() {
     label.style.color = 'var(--text-white)';
     label.style.backgroundColor = 'var(--darkmode-bg1)';
   });
-  
   contactBtn.style.color = 'var(--text-white)';
+
+  thankYou.style.backgroundColor = 'var(--darkmode-bg1)';
+  thankYou.style.color = 'var(--text-white)';
+  thankYouLink.style.color = 'var(--text-white)';
 };
 
 //darkmode is 'default' when entering page. 

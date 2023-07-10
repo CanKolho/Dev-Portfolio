@@ -33,13 +33,13 @@ body .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  gap: 4rem;
+  flex-direction: column;
+  gap: 2rem;
   padding: 2rem;
   background: var(--blue);
 }
 
-.content a {
+.content :is(a, h3) {
   color: #F5F7FA;
   text-decoration: none;
   margin: 0;
