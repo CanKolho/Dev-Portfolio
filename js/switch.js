@@ -99,10 +99,24 @@ function darkmode() {
 function check() {
   document.getElementById("toggle__switch").checked = true;
   darkmode();
+
+  localStorage.setItem('modePreference', switchInput.checked ? 'dark' : 'light');
 }
 
 switchInput.addEventListener('click', function () {
   (switchInput.checked) ? darkmode() :lightmode();
+
+  localStorage.setItem('modePreference', switchInput.checked ? 'dark' : 'light');
 });
 
 check();
+
+//does not work yet
+document.addEventListener('DOMContentLoaded', function() {
+  const modePreference = localStorage.getItem('modePreference');
+  if (modePreference === 'dark') {
+    darkmode();
+  } else {
+    lightmode();
+  }
+});

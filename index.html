@@ -10,9 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Icons-->
 
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/navbar.css">
@@ -75,7 +73,7 @@
       </section>
       <section class="about" id="about">
         <div class="about-img">
-          <img src="images/about3.jpg" alt="">
+          <img src="images/about.jpg" alt="">
         </div>
         <div class="about-content">
           <h2 class="heading">About <span>Me.</span></h2>
@@ -365,12 +363,11 @@
           <filter id="blob">
             <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
             <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
-            <!--feComposite(in="SourceGraphic" in2="blob" operator="atop") //After reviewing this after years I can't remember why I added this but it isn't necessary for the blob effect-->
           </filter>
         </defs>
       </svg>
     </main>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> <!--TypedJS-->
     <script src="js/hamburger.js"></script>
     <script src="js/navbarScroll.js"></script>
 		<script src="js/switch.js"></script>
