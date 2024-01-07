@@ -20,16 +20,20 @@
   box-shadow: 0 0 .4rem var(--darkmode-bg1);
   overflow: hidden;
   display: flex;
+  transition: all 0.5s ease;
 }
-
 
 .project-box img {
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: contain;
   transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 
+.project-box:hover img {
+  transform: scale(1.1)
+}
 
 .project-box .project-layer {
   position: absolute;
@@ -37,13 +41,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0 ,0 ,0, .4), var(--blue));
+  background: linear-gradient(rgba(0, 0, 0, 0), var(--blue));
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   padding: 0 4rem;
+  transform: translateY(100%); 
+  transition: transform 0.5s ease;
+}
+
+.project-box:hover .project-layer {
+  transform: translateY(0);
 }
 
 .project-layer h4 {
