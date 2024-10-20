@@ -44,3 +44,8 @@ section {
   padding: 10rem 9% 2rem;
 	transition: background-color 0.4s ease;
 }
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}

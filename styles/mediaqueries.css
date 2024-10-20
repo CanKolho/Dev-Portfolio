@@ -44,19 +44,6 @@
 		width: 95vw;
 		margin-top: 4rem;
 	}
-
-	.about {
-		flex-direction: column-reverse;
-	}
-
-	.about-img img {
-		width: 55vw;
-	}
-
-	.project h2 {
-		margin-bottom: 3rem;
-	}
-
 }
 
 @media (max-width: 671px) {
